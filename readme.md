@@ -4,7 +4,7 @@
 Download xampp: https://www.apachefriends.org/download.html
 Download and extract cmder mini: http://cmder.net/
 
-##Mac Os, Ubuntu and windows users continue here:
+##Mac Os, Ubuntu and Windows users continue here:
 
 Create a database locally named homestead utf8_general_ci
 Download composer https://getcomposer.org/download/
