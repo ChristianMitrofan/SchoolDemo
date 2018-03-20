@@ -1,8 +1,8 @@
 # schooldemo
 ##Windows users:
 
-Download xampp: https://www.apachefriends.org/download.html
-Download and extract cmder mini: http://cmder.net/
+Download xampp: https://www.apachefriends.org/download.html<br/>
+Download and extract cmder mini: http://cmder.net/<br/><br/>
 
 ##Mac Os, Ubuntu and Windows users continue here:
 
