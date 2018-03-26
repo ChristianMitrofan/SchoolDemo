@@ -2,7 +2,7 @@
 
 @section('content')
 <h1>Homepage</h1>
-<p>The ToucanTech database stores information about its members. Each member can be associated with 1 or more school. I built a demo that allows someone to add a new student with the fields “Name”, “Email Address” and "School" (selected from a list). The demo displays all students for a selected school. The primary language I used is PHP and also laravel framework.</p>
+<p>The ToucanTech database stores information about its members. Each member can be associated with 1 or more school. I built a demo that allows someone to add a new student with the fields “Name”, “Email Address” and "School" (selected from a list). The demo displays all students for a selected school. The primary language I used is PHP with the laravel framework.</p>
 {!! Form::open(['url' => '/Students']) !!}
 <div class="row"> 
 	<div class="col-lg-6">

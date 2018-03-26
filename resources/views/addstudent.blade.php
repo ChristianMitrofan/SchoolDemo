@@ -9,11 +9,11 @@
 		</div>
 		<div class="form-group">
 			{{Form::label('email', 'E-Mail Address')}}
-			{{Form::text('email', '',['class' => 'form-control', 'placeholder' => 'Enter your email'])}}
+			{{Form::email('email', '',['class' => 'form-control', 'placeholder' => 'example@gmail.com'])}}
 		</div>
 		<div class="form-group">
-		    {{ Form::Label('school', 'School:') }}
-		    {{ Form::select('school_id', $schools, '' , ['class' => 'form-control']) }}
+		    {{ Form::Label('schools', 'Schools:') }}
+		    {{ Form::select('school_ids[]', $schools, '' , ['class' => 'form-control' , 'id' => 'schools' , 'multiple' => 'multiple']) }}
 		</div>
 		<div>
 			{{Form::submit('Submit', ['class'=> 'btn btn-primary'])}}
@@ -24,5 +24,5 @@
 
 @section('sidebar')
 	@parent
-	<p> You can add a new student by writing the name, the email and select a school from the ones available </p>
+	<p> You can add a new student by writing the name, the email and select a school from the ones available. To select multiple schools, please press the control key and then select the schools that you enrolled to. </p>
 @endsection

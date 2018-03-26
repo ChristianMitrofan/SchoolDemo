@@ -15,6 +15,7 @@ Open the console and cd your project root directory( xampp/htdocs/schooldemo )<b
 Run composer install in this directory.<br/>
 Run php artisan key:generate<br/>
 Run php artisan migrate<br/>
+Run php artisan db:seed<br/>
 Run php artisan serve
 
 #####You can now access your project at localhost:8000 :)

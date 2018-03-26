@@ -19,7 +19,7 @@ class SchoolController extends Controller
             return redirect('/')->with('success', 'School added');
         }
 
-    	return redirect('/')->with('success', 'School already exists');
+    	return redirect('/')->with('failure', 'School already exists');
     }
 
     public function getSchools(){

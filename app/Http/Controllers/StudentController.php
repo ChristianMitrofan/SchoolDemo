@@ -9,23 +9,14 @@ use App\School;
 class StudentController extends Controller
 {
     public function submit(Request $request){
-    	$this->validate($request, [ 'name' => 'required', 'email' => 'required']);
-        /*
-    	$School = School::where('name', $request->input('school'))->first();
-        if ($School === null) {
-            $School = new School;
-            $School->name = $request->input('school');
-            $School->save();
-        }*/
+    	$this->validate($request, [ 'name' => 'required', 'email' => 'unique:students,email']);
         
     	$Student = new Student;
     	$Student->name = $request->input('name');
     	$Student->email = $request->input('email');
         $Student->save();
 
-        $Student->mySchool()->attach($request->input('school_id'));
-        //$School = School::find($request->input('school_id'));
-    	//$Student->mySchool()->save($School);
+        $Student->mySchools()->attach($request->input('school_ids'));
 
     	return redirect('/')->with('success', 'Student added');
     }

@@ -21,13 +21,6 @@ Route::get('/AboutMe', function(){
 });
 
 Route::get('/AddStudent', 'SchoolController@getSchools');
-/*
-Route::get('/Students', function($schoolname){
-	$School = School::where('name', $schoolname)->first();
-
-	return view('students')->with('school',$School);
-});*/
-
 
 Route::post('/Students', 'StudentController@getStudents');
 

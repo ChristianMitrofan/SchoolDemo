@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Student extends Model
 {
-    public function mySchool()
+    public function mySchools()
     {
         return $this->belongsToMany('App\School');
     }
